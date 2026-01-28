@@ -59,10 +59,6 @@ export default function GalleryItem({ item, index, onOpenModal }: GalleryItemPro
                     transition={{ duration: 0.5, ease: 'easeOut' }}
                 />
 
-                {/* Placeholder for missing images */}
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-4xl sm:text-5xl lg:text-6xl font-light">
-                    {String(index + 1).padStart(2, '0')}
-                </div>
             </div>
 
             {/* Text Content - RWD text sizes */}
