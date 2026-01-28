@@ -1305,7 +1305,7 @@ The city slowly quiets, while your life fills with energy, one bar at a time.`,
         id: '06-beverage',
         industry: { en: 'Beverage Industry', zh: '手搖飲' },
         subtitle: { en: 'Estate-Grade Premium Black Tea', zh: '莊園級精品紅茶' },
-        image: '/images/06-beverage.jpg',
+        image: '/images/06-beverage.png',
         content: {
             seo: {
                 en: `### Premium Black Tea Guide: From Origin to Cup, Savoring Tea with a Story
@@ -1573,7 +1573,7 @@ Outside the window, the city rushes on. But your world has temporarily slowed do
         id: '07-ecommerce',
         industry: { en: 'E-commerce', zh: '電商平台' },
         subtitle: { en: 'Subscription Shopping', zh: '會員訂閱制購物' },
-        image: '/images/07-ecommerce.jpg',
+        image: '/images/07-ecommerce.png',
         content: {
             seo: {
                 en: `### The Complete Guide to Subscription Shopping: Let Quality Products Come to You Automatically
@@ -1853,7 +1853,7 @@ And you've already begun to enjoy this weekend morning.`,
         id: '08-fitness',
         industry: { en: 'Fitness Industry', zh: '健身產業' },
         subtitle: { en: '24-Hour Smart Gym', zh: '24小時智能健身房' },
-        image: '/images/08-fitness.jpg',
+        image: '/images/08-fitness.png',
         content: {
             seo: {
                 en: `### 24-Hour Smart Gym Guide: Exercise Whenever You Want
@@ -2157,7 +2157,7 @@ This city never sleeps, and neither does your desire to live better.`,
         id: '09-coffee',
         industry: { en: 'Convenience Store', zh: '便利商店' },
         subtitle: { en: 'Freshly Brewed Specialty Coffee', zh: '現萃精品咖啡' },
-        image: '/images/09-coffee.jpg',
+        image: '/images/09-coffee.png',
         content: {
             seo: {
                 en: `### Convenience Store Specialty Coffee Guide: Quality Coffee, One Block Away
@@ -2463,7 +2463,7 @@ Who says mornings have to be a struggle? Sometimes all it takes is one good cup 
         id: '10-delivery',
         industry: { en: 'Food Delivery', zh: '餐飲外送' },
         subtitle: { en: 'Subscription Delivery Plan', zh: '跨店訂閱優惠方案' },
-        image: '/images/10-delivery.jpg',
+        image: '/images/10-delivery.png',
         content: {
             seo: {
                 en: `### Food Delivery Subscription Guide: Is Unlimited Free Delivery Worth It?
@@ -2777,7 +2777,7 @@ This is the comfort that delivery subscription provides—bad weather days, stay
         id: '11-coldchain',
         industry: { en: 'Cold Chain Logistics', zh: '冷鏈物流' },
         subtitle: { en: 'Industry White Paper', zh: '產業白皮書' },
-        image: '/images/11-coldchain.jpg',
+        image: '/images/11-coldchain.png',
         content: {
             seo: {
                 en: `### Cold Chain Logistics White Paper: The Invisible Infrastructure of Food Safety
@@ -3145,7 +3145,7 @@ You might never see the refrigerated trucks on the highway, or the warehouse wor
         id: '12-travel',
         industry: { en: 'Travel & Tourism', zh: '旅遊業' },
         subtitle: { en: 'Customized In-Depth Tours', zh: '客製化深度旅遊' },
-        image: '/images/12-travel.jpg',
+        image: '/images/12-travel.png',
         content: {
             seo: {
                 en: `### Customized In-Depth Tours: Travel That Truly Belongs to You
@@ -3445,7 +3445,7 @@ Tomorrow, another day designed just for you. No rushing. No tour buses. Just Kyo
         id: '13-realestate',
         industry: { en: 'Real Estate', zh: '房地產' },
         subtitle: { en: 'Smart Community Living', zh: '智慧社區住宅' },
-        image: '/images/13-realestate.jpg',
+        image: '/images/13-realestate.png',
         content: {
             seo: {
                 en: `### Smart Community Living: Where Technology Meets Home
@@ -3783,7 +3783,7 @@ Technology that disappears into comfort.`,
         id: '14-fintech',
         industry: { en: 'FinTech', zh: '金融科技' },
         subtitle: { en: 'Digital Banking Account', zh: '數位銀行帳戶' },
-        image: '/images/14-fintech.jpg',
+        image: '/images/14-fintech.png',
         content: {
             seo: {
                 en: `### Digital Banking Guide: Banking Without the Bank
@@ -4151,7 +4151,7 @@ Neither do you.`,
         id: '15-edtech',
         industry: { en: 'EdTech', zh: '教育科技' },
         subtitle: { en: 'Kids Coding Education', zh: '兒童程式教育' },
-        image: '/images/15-edtech.jpg',
+        image: '/images/15-edtech.png',
         content: {
             seo: {
                 en: `### Kids Coding Education: Why Your Child Should Learn to Code
@@ -4525,7 +4525,7 @@ And this is just the beginning.`,
         id: '16-beauty',
         industry: { en: 'Beauty & Skincare', zh: '美妝保養' },
         subtitle: { en: 'Clean Beauty Products', zh: '純淨美容保養品' },
-        image: '/images/16-beauty.jpg',
+        image: '/images/16-beauty.png',
         content: {
             seo: {
                 en: `### Clean Beauty Guide: What You Put on Your Skin Matters
@@ -4903,7 +4903,7 @@ Sometimes less isn't just more. It's everything.`,
         id: '17-smarthome',
         industry: { en: 'Smart Home', zh: '智慧家居' },
         subtitle: { en: 'Home Automation System', zh: '居家自動化系統' },
-        image: '/images/17-smarthome.jpg',
+        image: '/images/17-smarthome.png',
         content: {
             seo: {
                 en: `### Smart Home Automation: Your Home That Thinks for You
@@ -5273,7 +5273,7 @@ A partner that knows you.`,
         id: '18-plantbased',
         industry: { en: 'Food & Beverage', zh: '餐飲業' },
         subtitle: { en: 'Plant-Based Restaurant', zh: '植物肉餐廳' },
-        image: '/images/18-plantbased.jpg',
+        image: '/images/18-plantbased.png',
         content: {
             seo: {
                 en: `### Plant-Based Dining Guide: The Future of Food Is Here
@@ -5655,7 +5655,7 @@ Sometimes it's just one bite at a time.`,
         id: '19-outdoor',
         industry: { en: 'Outdoor Recreation', zh: '戶外休閒' },
         subtitle: { en: 'Camping Gear Rental', zh: '露營裝備租賃' },
-        image: '/images/19-outdoor.jpg',
+        image: '/images/19-outdoor.png',
         content: {
             seo: {
                 en: `### Camping Gear Rental Guide: Experience the Outdoors Without Breaking the Bank
@@ -6043,7 +6043,7 @@ And those, you get to keep forever.`,
         id: '20-bakery',
         industry: { en: 'Bakery', zh: '烘焙蛋糕' },
         subtitle: { en: 'Artisan Custom Cakes', zh: '手工客製蛋糕' },
-        image: '/images/20-bakery.jpg',
+        image: '/images/20-bakery.png',
         content: {
             seo: {
                 en: `### Artisan Custom Cakes: When Every Celebration Deserves a Masterpiece
