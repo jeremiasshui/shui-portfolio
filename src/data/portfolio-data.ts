@@ -16,7 +16,7 @@ export const portfolioData: PortfolioItem[] = [
         id: '01-health',
         industry: { en: 'Health Supplements', zh: '保健食品' },
         subtitle: { en: 'High-Concentration Deep-Sea Fish Oil', zh: '高濃度深海魚油' },
-        image: '/images/01-health.jpg',
+        image: '/images/01-health.png',
         content: {
             seo: {
                 en: `### 2025 Fish Oil Guide: Why High-Concentration Omega-3 Has Become a Modern Essential
@@ -270,7 +270,7 @@ Whether you live beside the metro station or tucked away in a mountain-side alle
         id: '02-aesthetic',
         industry: { en: 'Aesthetic Medicine', zh: '醫美診所' },
         subtitle: { en: 'Picosecond Laser Treatment', zh: '皮秒雷射淡斑療程' },
-        image: '/images/02-aesthetic.jpg',
+        image: '/images/02-aesthetic.png',
         content: {
             seo: {
                 en: `### The Complete Guide to Picosecond Laser: For Those Seeking Radiant, Even-Toned Skin
@@ -524,7 +524,7 @@ You know that in a few weeks, you'll like the face in the mirror even more than 
         id: '03-pet',
         industry: { en: 'Pet Supplies', zh: '寵物用品' },
         subtitle: { en: 'Freeze-Dried Cat Food', zh: '貓咪主食凍乾' },
-        image: '/images/03-pet.jpg',
+        image: '/images/03-pet.png',
         content: {
             seo: {
                 en: `### Freeze-Dried Cat Food Recommendations: The Most Natural Diet Choice for Your Feline
@@ -773,7 +773,7 @@ Days with a cat don't need to be complicated. A pack of good freeze-dried, a fur
         id: '04-education',
         industry: { en: 'Online Education', zh: '線上課程' },
         subtitle: { en: 'AI Art Generation Masterclass', zh: 'AI繪圖工具實戰班' },
-        image: '/images/04-education.jpg',
+        image: '/images/04-education.png',
         content: {
             seo: {
                 en: `### AI Art for Beginners: A Complete Guide to Creating Stunning Images with Zero Drawing Skills
@@ -1045,7 +1045,7 @@ Tomorrow when you wake up, you'll see the world you created.`,
         id: '05-green',
         industry: { en: 'Green Energy', zh: '綠能產業' },
         subtitle: { en: 'Home EV Charging Station', zh: '家用電動車充電樁' },
-        image: '/images/05-green.jpg',
+        image: '/images/05-green.png',
         content: {
             seo: {
                 en: `### Complete Guide to Home EV Charging Station Installation: Let Your Car Charge at Home
