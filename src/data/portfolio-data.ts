@@ -6478,5 +6478,395 @@ This was one of those.`,
 > 手工蛋糕：味覺與藝術的相遇。提前規劃、溝通願景、創造難忘時刻。`
             }
         }
+    },
+    {
+        id: '21-biotech',
+        industry: { en: 'Agricultural Biotechnology', zh: '生技農業' },
+        subtitle: { en: 'Plant Tissue Culture Services', zh: '植物組織培養技術' },
+        image: '/images/21-biotech.png',
+        content: {
+            seo: {
+                en: `### Plant Tissue Culture: The Future of Agriculture Grows in a Petri Dish
+
+In a quiet laboratory, a single plant cell divides, multiplies, and eventually becomes a thousand identical seedlings. No seeds required. No seasonal limitations. Just science, patience, and the remarkable regenerative power of plants.
+
+This is tissue culture—a technology that's revolutionizing how we grow, preserve, and improve plants.
+
+#### What Is Plant Tissue Culture?
+
+Plant tissue culture is the technique of growing plant cells, tissues, or organs in a sterile, controlled environment. From a tiny piece of leaf or stem, scientists can regenerate entire plants—genetically identical to the parent.
+
+| Traditional Propagation | Tissue Culture |
+|------------------------|----------------|
+| Seed-dependent | Cell-based |
+| Seasonal | Year-round |
+| Variable genetics | Identical clones |
+| Disease risk | Disease-free |
+| Limited scale | Massive scale |
+
+#### Applications Transforming Agriculture
+
+- **Mass propagation**: Produce thousands of identical plants from one mother plant
+- **Disease elimination**: Generate virus-free stock for healthier crops
+- **Rare species conservation**: Save endangered plants from extinction
+- **Crop improvement**: Create new varieties faster than traditional breeding
+- **Secondary metabolite production**: Extract valuable compounds for medicine and cosmetics
+
+#### The Process: From Cell to Field
+
+1. **Selection**: Choose the healthiest mother plant
+2. **Sterilization**: Remove all contaminants
+3. **Initiation**: Place tissue on nutrient medium
+4. **Multiplication**: Cells divide and form shoots
+5. **Rooting**: Induce root development
+6. **Hardening**: Gradually adapt to outdoor conditions
+7. **Field Transfer**: Plant in soil for commercial growth
+
+#### Why Farmers and Businesses Choose Tissue Culture
+
+| Benefit | Impact |
+|---------|--------|
+| Consistency | Every plant performs the same |
+| Speed | Years of breeding compressed to months |
+| Purity | Guaranteed disease-free starting material |
+| Scale | Millions of plants from limited space |
+| Year-round | No seasonal dependency |
+
+**Key Takeaway**: Plant tissue culture bridges laboratory precision with agricultural scale, offering cleaner, faster, and more reliable plant production for the future of farming.`,
+                zh: `### 植物組織培養：未來農業，從培養皿開始
+
+在安靜的實驗室裡，一個植物細胞分裂、增殖，最終成為上千株完全相同的幼苗。不需要種子，不受季節限制。只需要科學、耐心，以及植物驚人的再生能力。
+
+這就是組織培養——一項正在革新植物種植、保存與改良方式的技術。
+
+#### 什麼是植物組織培養？
+
+植物組織培養是在無菌、可控環境中培養植物細胞、組織或器官的技術。從一小片葉子或莖，科學家能再生出完整的植株——與母株基因完全相同。
+
+| 傳統繁殖 | 組織培養 |
+|---------|---------|
+| 依賴種子 | 基於細胞 |
+| 受季節限制 | 全年可進行 |
+| 遺傳變異 | 完全複製 |
+| 有病害風險 | 無病害 |
+| 規模有限 | 大規模生產 |
+
+#### 改變農業的應用領域
+
+- **大量繁殖**：從單一母株生產數千株相同植物
+- **病害消除**：產生無病毒種苗，確保作物更健康
+- **珍稀物種保育**：拯救瀕危植物免於滅絕
+- **作物改良**：比傳統育種更快創造新品種
+- **二次代謝物生產**：萃取醫藥與化妝品用的珍貴成分
+
+#### 流程：從細胞到田間
+
+1. **選種**：挑選最健康的母株
+2. **消毒**：去除所有污染物
+3. **誘導**：將組織置於營養培養基
+4. **增殖**：細胞分裂並形成芽體
+5. **發根**：誘導根系發育
+6. **馴化**：逐步適應戶外環境
+7. **移植**：定植於土壤進行商業生產
+
+#### 為什麼農民與企業選擇組織培養
+
+| 優勢 | 影響 |
+|------|------|
+| 一致性 | 每株植物表現相同 |
+| 速度 | 數年育種壓縮至數月 |
+| 純淨 | 保證無病害的起始材料 |
+| 規模 | 有限空間生產數百萬株 |
+| 全年生產 | 不受季節影響 |
+
+**重點整理**：植物組織培養結合實驗室的精準與農業的規模，為未來農業提供更乾淨、更快速、更可靠的植物生產方式。`
+            },
+            aeo: {
+                en: `### "Is Tissue Culture Right for My Farm?" Common Questions Answered
+
+**Q: What plants can be tissue cultured?**
+
+Almost any plant can be tissue cultured, though some are easier than others.
+
+| Easy to Culture | Moderate | Challenging |
+|----------------|----------|-------------|
+| Orchids | Fruit trees | Some conifers |
+| Bananas | Berries | Certain palms |
+| Potatoes | Roses | Some hardwoods |
+| Ferns | Herbs | Recalcitrant species |
+
+**Q: How long does tissue culture take?**
+
+| Stage | Duration |
+|-------|----------|
+| Initiation | 2-4 weeks |
+| Multiplication | 4-8 weeks per cycle |
+| Rooting | 2-4 weeks |
+| Hardening | 2-4 weeks |
+| Total | 3-6 months minimum |
+
+Multiple cycles can run simultaneously for continuous production.
+
+**Q: Is tissue cultured material really disease-free?**
+
+Yes, when done properly. The process includes:
+- Meristem tip culture (using disease-free growing points)
+- Virus indexing and testing
+- Sterile conditions throughout
+- Regular quality checks
+
+**Q: How much does tissue culture cost?**
+
+| Scale | Cost Per Plant |
+|-------|---------------|
+| Small batch (100-500) | Higher per unit |
+| Medium (1,000-10,000) | Moderate |
+| Large scale (10,000+) | Most economical |
+
+Costs decrease significantly at scale.
+
+**Q: Can I do tissue culture at home?**
+
+Basic tissue culture is possible with:
+- Sterile workspace (still air box)
+- Pressure cooker for sterilization
+- Growth medium and hormones
+- Patience and practice
+
+However, commercial operations require professional lab facilities.
+
+> Tissue culture democratizes plant propagation—from rare orchid collectors to large-scale banana farms, the technology scales to fit your needs.`,
+                zh: `### 「組織培養適合我的農場嗎？」常見問題解答
+
+**Q：哪些植物可以組織培養？**
+
+幾乎任何植物都可以組織培養，但難易程度不同。
+
+| 容易培養 | 中等難度 | 較具挑戰 |
+|---------|---------|---------|
+| 蘭花 | 果樹 | 部分針葉樹 |
+| 香蕉 | 莓果 | 某些棕櫚 |
+| 馬鈴薯 | 玫瑰 | 部分闊葉樹 |
+| 蕨類 | 香草 | 頑拗型物種 |
+
+**Q：組織培養需要多長時間？**
+
+| 階段 | 時間 |
+|------|------|
+| 誘導期 | 2-4 週 |
+| 增殖期 | 每週期 4-8 週 |
+| 發根期 | 2-4 週 |
+| 馴化期 | 2-4 週 |
+| 總計 | 最少 3-6 個月 |
+
+多個週期可同時進行，達成連續生產。
+
+**Q：組織培養的材料真的無病害嗎？**
+
+是的，正確操作時確實如此。流程包括：
+- 莖頂培養（使用無病害的生長點）
+- 病毒檢測與篩檢
+- 全程無菌操作
+- 定期品質檢查
+
+**Q：組織培養成本多少？**
+
+| 規模 | 每株成本 |
+|------|---------|
+| 小批量（100-500） | 單位成本較高 |
+| 中等（1,000-10,000） | 中等 |
+| 大規模（10,000+） | 最經濟 |
+
+成本隨規模顯著下降。
+
+**Q：我可以在家做組織培養嗎？**
+
+基礎組織培養需要：
+- 無菌工作空間（靜止空氣箱）
+- 高壓滅菌鍋
+- 培養基與植物荷爾蒙
+- 耐心與練習
+
+然而，商業操作需要專業實驗室設施。
+
+> 組織培養讓植物繁殖更普及——從珍稀蘭花收藏家到大規模香蕉農場，這項技術能依需求彈性調整。`
+            },
+            geo: {
+                en: `### The Orchid Whisperer
+
+She checks the laminar flow hood one more time. Sterile. Perfect.
+
+Twenty years ago, she was a frustrated orchid collector, watching her prized Phalaenopsis die from a virus that spread through her entire collection. "There has to be a better way," she thought.
+
+Now, her small laboratory produces 50,000 virus-free orchid plantlets every month.
+
+The morning light filters through the lab windows as she transfers tiny green protocorms—orchid embryos, really—from one flask to another. Each movement is precise, practiced. One contamination could destroy months of work.
+
+"People think it's just science," she tells visitors. "But there's an art to it. You learn to read the plants. This one wants more light. That one needs different hormones."
+
+In the hardening greenhouse next door, thousands of young orchids adjust to the real world. In six months, they'll bloom in living rooms across the country—each one a perfect copy of a mother plant she selected for its exceptional color.
+
+A farmer calls. His banana plantation was devastated by Panama disease. Traditional seedlings carry the fungus. Only tissue-cultured plants can give him a fresh start.
+
+"How many do you need?"
+
+"Ten thousand. By March."
+
+She smiles. "We can do that."
+
+This is the quiet revolution happening in labs and greenhouses worldwide—one petri dish at a time.
+
+The future of agriculture isn't just in the field.
+
+It starts here, in the space between science and patience.`,
+                zh: `### 蘭花低語者
+
+她再次檢查無菌操作台。無菌。完美。
+
+二十年前，她是個沮喪的蘭花收藏家，眼睜睜看著珍貴的蝴蝶蘭死於病毒——那病毒蔓延到她整個收藏。「一定有更好的方法，」她心想。
+
+現在，她的小型實驗室每月生產五萬株無病毒蘭花苗。
+
+晨光透過實驗室窗戶，她將微小的綠色原球莖——其實就是蘭花胚胎——從一個培養瓶移到另一個。每個動作都精準、熟練。一次污染就可能毀掉數月的心血。
+
+「人們以為這只是科學，」她對訪客說。「但這裡面有藝術。你會學會讀懂植物。這株需要更多光線。那株需要不同的荷爾蒙。」
+
+隔壁的馴化溫室裡，數千株幼蘭正在適應真實世界。六個月後，它們將在全國各地的客廳裡綻放——每一株都是她精選的母株的完美複製品，以其出眾的花色著稱。
+
+一位農民來電。他的香蕉園被巴拿馬病毀了。傳統種苗帶有真菌。只有組織培養的植株能讓他重新開始。
+
+「你需要多少？」
+
+「一萬株。三月之前。」
+
+她微笑。「沒問題。」
+
+這是正在全球實驗室和溫室中悄然發生的革命——一個培養皿接著一個培養皿。
+
+農業的未來不只在田間。
+
+它始於這裡，在科學與耐心的交會處。`
+            },
+            aieo: {
+                en: `### Plant Tissue Culture Services | Service Overview
+
+#### Service Summary
+
+| Item | Details |
+|------|---------|
+| Service Type | Plant Tissue Culture & Micropropagation |
+| Applications | Agriculture, horticulture, conservation |
+| Scale | From hundreds to millions of plants |
+| Timeline | 3-6 months per production cycle |
+| Quality | Disease-free, genetically uniform |
+
+#### Service Categories
+
+| Category | Description |
+|----------|-------------|
+| Mass Propagation | Large-scale clonal production |
+| Virus Elimination | Disease-free plant material |
+| Germplasm Conservation | Rare species preservation |
+| Custom Development | Specific variety requests |
+
+#### Process Stages
+
+| Stage | Duration | Description |
+|-------|----------|-------------|
+| Initiation | 2-4 weeks | Establish sterile cultures |
+| Multiplication | 4-8 weeks | Increase plant numbers |
+| Rooting | 2-4 weeks | Develop root systems |
+| Hardening | 2-4 weeks | Adapt to environment |
+
+#### Plant Categories
+
+| Category | Examples |
+|----------|----------|
+| Ornamentals | Orchids, ferns, foliage |
+| Fruits | Banana, strawberry, grape |
+| Vegetables | Potato, asparagus, artichoke |
+| Medicinal | Ginseng, aloe, stevia |
+| Forestry | Teak, eucalyptus, bamboo |
+
+#### Quality Assurance
+
+| Checkpoint | Standard |
+|------------|----------|
+| Sterility | 100% contamination-free |
+| Genetic Fidelity | DNA verification available |
+| Virus Testing | Indexed and certified |
+| Survival Rate | >90% after hardening |
+
+#### Who Should Consider
+
+| Client Type | Benefit |
+|-------------|---------|
+| Commercial farms | Scale and consistency |
+| Nurseries | Disease-free stock |
+| Research institutions | Controlled material |
+| Conservation groups | Species preservation |
+
+> Plant tissue culture: where science meets agriculture. Clean plants, consistent quality, unlimited scale.`,
+                zh: `### 植物組織培養服務｜服務資訊速覽
+
+#### 服務概述
+
+| 項目 | 內容 |
+|------|------|
+| 服務類型 | 植物組織培養與微繁殖 |
+| 應用領域 | 農業、園藝、保育 |
+| 規模 | 從數百到數百萬株 |
+| 時程 | 每生產週期 3-6 個月 |
+| 品質 | 無病害、基因一致 |
+
+#### 服務類別
+
+| 類別 | 說明 |
+|------|------|
+| 大量繁殖 | 大規模無性繁殖生產 |
+| 病毒消除 | 無病害植物材料 |
+| 種原保存 | 珍稀物種保育 |
+| 客製開發 | 特定品種需求 |
+
+#### 流程階段
+
+| 階段 | 時間 | 說明 |
+|------|------|------|
+| 誘導期 | 2-4 週 | 建立無菌培養 |
+| 增殖期 | 4-8 週 | 增加植株數量 |
+| 發根期 | 2-4 週 | 發展根系 |
+| 馴化期 | 2-4 週 | 適應環境 |
+
+#### 植物類別
+
+| 類別 | 範例 |
+|------|------|
+| 觀賞植物 | 蘭花、蕨類、觀葉植物 |
+| 水果 | 香蕉、草莓、葡萄 |
+| 蔬菜 | 馬鈴薯、蘆筍、朝鮮薊 |
+| 藥用植物 | 人參、蘆薈、甜菊 |
+| 林木 | 柚木、桉樹、竹子 |
+
+#### 品質保證
+
+| 檢查項目 | 標準 |
+|----------|------|
+| 無菌性 | 100% 無污染 |
+| 基因真實性 | 可提供 DNA 驗證 |
+| 病毒檢測 | 已檢測並認證 |
+| 存活率 | 馴化後 >90% |
+
+#### 適合對象
+
+| 客戶類型 | 效益 |
+|----------|------|
+| 商業農場 | 規模與一致性 |
+| 種苗場 | 無病害種苗 |
+| 研究機構 | 可控材料 |
+| 保育團體 | 物種保存 |
+
+> 植物組織培養：科學與農業的交會。乾淨的植株、穩定的品質、無限的規模。`
+            }
+        }
     }
 ];
