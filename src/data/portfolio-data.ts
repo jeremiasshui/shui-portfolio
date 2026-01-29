@@ -2797,7 +2797,7 @@ Simply put: it's a comprehensive system ensuring "the right temperature at every
 | Indicator | Data |
 |-----------|------|
 | Global Market Size (2024) | Approximately $340 billion USD |
-| Annual Growth Rate | 15-18% |
+| Annual Growth Rate | 10-16% |
 | Key Drivers | E-commerce fresh food, pharmaceutical logistics, consumer expectations |
 | Major Players | Lineage Logistics, Americold, DFDS |
 
@@ -2843,7 +2843,7 @@ Simply put: it's a comprehensive system ensuring "the right temperature at every
 | 指標 | 數據 |
 |------|------|
 | 全球市場規模（2024） | 約3,400億美元 |
-| 年成長率 | 15-18% |
+| 年成長率 | 10-16% |
 | 主要驅動力 | 電商生鮮、醫藥物流、消費者期待 |
 | 主要業者 | Lineage Logistics、Americold、DFDS |
 
@@ -3036,7 +3036,7 @@ You might never see the refrigerated trucks on the highway, or the warehouse wor
 | Taiwan Agricultural Loss Rate | Approximately 30% |
 | Government Investment | NT$12.6 billion |
 | Global Market Size | ~$340 billion USD (2024) |
-| Annual Growth Rate | 15-18% |
+| Annual Growth Rate | 10-16% |
 
 #### Temperature Classifications
 
@@ -3092,7 +3092,7 @@ You might never see the refrigerated trucks on the highway, or the warehouse wor
 | 台灣農產品耗損率 | 約30% |
 | 政府投資 | 126億元 |
 | 全球市場規模 | 約3,400億美元（2024） |
-| 年成長率 | 15-18% |
+| 年成長率 | 10-16% |
 
 #### 溫層分類
 
@@ -5290,7 +5290,7 @@ Plant-based meat uses proteins from plants—peas, soy, mushrooms, and other ing
 
 | Driver | Impact |
 |--------|--------|
-| Environment | 90% less emissions than beef |
+| Environment | 89% less emissions than beef |
 | Health | No cholesterol, less saturated fat |
 | Animal Welfare | No animals harmed |
 | Food Security | More efficient land and water use |
@@ -5337,7 +5337,7 @@ Plant-based meat uses proteins from plants—peas, soy, mushrooms, and other ing
 
 | 驅動力 | 影響 |
 |--------|------|
-| 環境 | 比牛肉減少90%排放 |
+| 環境 | 比牛肉減少89%排放 |
 | 健康 | 無膽固醇、較少飽和脂肪 |
 | 動物福利 | 不傷害動物 |
 | 糧食安全 | 更有效率的土地和水資源使用 |
@@ -5421,9 +5421,9 @@ Generally yes, but consult healthcare providers. Plant-based proteins are nutrit
 
 | Impact | Plant-Based vs. Beef |
 |--------|---------------------|
-| Land use | 93% less |
-| Water use | 87% less |
-| Emissions | 90% less |
+| Land use | 79% less |
+| Water use | 95% less |
+| Emissions | 89% less |
 
 The environmental case is strong.
 
@@ -5477,9 +5477,9 @@ The environmental case is strong.
 
 | 影響 | 植物肉 vs. 牛肉 |
 |------|----------------|
-| 土地使用 | 少93% |
-| 用水量 | 少87% |
-| 排放量 | 少90% |
+| 土地使用 | 少79% |
+| 用水量 | 少95% |
+| 排放量 | 少89% |
 
 環境上的論點很強。
 
@@ -5587,9 +5587,9 @@ Sometimes it's just one bite at a time.`,
 
 | Factor | Plant vs. Beef |
 |--------|----------------|
-| Land Use | -93% |
-| Water Use | -87% |
-| Emissions | -90% |
+| Land Use | -79% |
+| Water Use | -95% |
+| Emissions | -89% |
 
 #### Who Should Try
 
@@ -5634,9 +5634,9 @@ Sometimes it's just one bite at a time.`,
 
 | 因素 | 植物 vs. 牛肉 |
 |------|--------------|
-| 土地使用 | -93% |
-| 用水量 | -87% |
-| 排放量 | -90% |
+| 土地使用 | -79% |
+| 用水量 | -95% |
+| 排放量 | -89% |
 
 #### 誰該試試
 
