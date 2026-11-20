@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { portfolioData } from '@/data/portfolio-data';
+import { allCases } from '@/data/all-cases';
 import { caseMeta, categories, featured, type CategoryId } from '@/data/case-meta';
 import { jbSalad } from '@/data/real-cases';
 import { SITE, type Bi } from '@/data/site';
 import CaseCard from './CaseCard';
+import Cover from './Cover';
 
 const Section = ({ id, children, className = '' }: { id?: string; children: React.ReactNode; className?: string }) => (
     <section id={id} className={`scroll-mt-20 px-4 sm:px-6 ${className}`}>
@@ -23,7 +23,8 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 export default function HomeView() {
     const { l } = useLanguage();
     const [cat, setCat] = useState<CategoryId | 'all'>('all');
-    const list = portfolioData
+    const total = allCases.length;
+    const list = allCases
         .map((item, index) => ({ item, index }))
         .filter(({ item }) => cat === 'all' || caseMeta[item.id]?.category === cat);
 
@@ -61,8 +62,8 @@ export default function HomeView() {
                 </h1>
                 <p className="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl">
                     {l({
-                        zh: '我是水彥捷 Jeremy。我把一個產品寫成四個版本：讓 Google 排得上、讓精選摘要答得出、讓社群讀得下去、讓 AI 願意引用。這裡有 21 個產業的模擬提案，和 1 個真實案例。',
-                        en: 'I’m Jeremy Shui. I write each product four ways: to rank on Google, to win featured answers, to read well on social, and to be cited by AI. Here are 21 spec projects across industries, plus one real client case.',
+                        zh: `我是水彥捷 Jeremy。我把一個產品寫成四個版本：讓 Google 排得上、讓精選摘要答得出、讓社群讀得下去、讓 AI 願意引用。這裡有 ${total} 個產業的模擬提案，和 1 個真實案例。`,
+                        en: `I’m Jeremy Shui. I write each product four ways: to rank on Google, to win featured answers, to read well on social, and to be cited by AI. Here are ${total} spec projects across industries, plus one real client case.`,
                     })}
                 </p>
                 <ul className="mt-6 flex flex-wrap gap-2 text-xs sm:text-sm">
@@ -132,11 +133,11 @@ export default function HomeView() {
                 <p className="text-gray-600 mb-8">{l({ zh: '每篇都包含：讀者困擾、切角、四個版本，和 GA4 追蹤設計。', en: 'Each includes the reader’s problem, the angle, four versions and a GA4 plan.' })}</p>
                 <div className="grid gap-5 sm:grid-cols-3">
                     {featured.map((f) => {
-                        const item = portfolioData.find((p) => p.id === f.id)!;
+                        const item = allCases.find((p) => p.id === f.id)!;
                         return (
                             <Link key={f.id} href={`/work/${f.id}`} className="group rounded-xl bg-white border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow">
                                 <div className="relative aspect-[16/9]">
-                                    <Image src={item.image} alt={l(item.subtitle)} fill sizes="(min-width: 640px) 33vw, 100vw" className="object-cover" />
+                                    <Cover item={item} sizes="(min-width: 640px) 33vw, 100vw" />
                                 </div>
                                 <div className="p-5">
                                     <p className="text-xs text-teal-700 font-medium">{l({ zh: '如果', en: 'If ' })}{l(f.who)}</p>
@@ -163,7 +164,7 @@ export default function HomeView() {
             {/* 全部作品 + 分類篩選 */}
             <Section id="work" className="py-16 bg-gray-50">
                 <Eyebrow>{l({ zh: '全部作品', en: 'All work' })}</Eyebrow>
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">{l({ zh: '21 個產業，各寫四個版本', en: '21 industries, four versions each' })}</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">{l({ zh: `${total} 個產業，各寫四個版本`, en: `${total} industries, four versions each` })}</h2>
                 <div className="flex flex-wrap gap-2 mb-8" role="group" aria-label={l({ zh: '依產業篩選', en: 'Filter by industry' })}>
                     {[{ id: 'all' as const, label: { zh: '全部', en: 'All' } }, ...categories].map((c) => (
                         <button
@@ -187,8 +188,8 @@ export default function HomeView() {
                     <h2 className="text-lg font-bold text-gray-900">{l({ zh: '先說清楚', en: 'To be clear' })}</h2>
                     <p className="mt-3 text-gray-700 leading-relaxed">
                         {l({
-                            zh: '這 21 個案例都是我自己設定題目的模擬提案，不是客戶委託，也沒有任何虛構的成效數字。我把它們標出來，是因為你該知道自己在看什麼。真實的客戶案例，請看 JB Salad。',
-                            en: 'All 21 projects are self-initiated spec work: no client commissioned them, and there are no invented results. I label them because you should know what you are looking at. For a real client case, see JB Salad.',
+                            zh: `這 ${total} 個案例都是我自己設定題目的模擬提案，不是客戶委託，也沒有任何虛構的成效數字。我把它們標出來，是因為你該知道自己在看什麼。真實的客戶案例，請看 JB Salad。`,
+                            en: `All ${total} projects are self-initiated spec work: no client commissioned them, and there are no invented results. I label them because you should know what you are looking at. For a real client case, see JB Salad.`,
                         })}
                     </p>
                 </div>
@@ -207,10 +208,13 @@ export default function HomeView() {
                     </p>
                     <dl className="text-sm space-y-3">
                         <div><dt className="text-gray-400">{l({ zh: '證照', en: 'Certification' })}</dt><dd className="text-gray-900">{l({ zh: 'Google Analytics 4（GA4）認證', en: 'Google Analytics 4 (GA4) certified' })}</dd></div>
-                        <div><dt className="text-gray-400">{l({ zh: '學歷', en: 'Education' })}</dt><dd className="text-gray-900">{l({ zh: '國立臺灣海洋大學 航運管理碩士、銘傳大學 管理碩士', en: 'M.S. Shipping Management, National Taiwan Ocean University; M.S. Management, Ming Chuan University' })}</dd></div>
+                        <div><dt className="text-gray-400">{l({ zh: '學歷', en: 'Education' })}</dt><dd className="text-gray-900">{l({ zh: '銘傳大學 管理研究所碩士（MBA）、國立臺灣海洋大學 航運管理碩士', en: 'MBA, Ming Chuan University; Master of Business (Shipping Management), National Taiwan Ocean University' })}</dd></div>
                         <div><dt className="text-gray-400">{l({ zh: '擅長', en: 'Skills' })}</dt><dd className="text-gray-900">{l({ zh: 'SEO／AEO／GEO 內容結構、GA4 追蹤設計、Claude Skills 與 AI 工作流程', en: 'SEO/AEO/GEO content structure, GA4 tracking design, Claude Skills & AI workflows' })}</dd></div>
                     </dl>
                 </div>
+                <Link href="/about" className="mt-8 inline-block rounded-full border border-gray-300 px-5 py-2.5 text-sm text-gray-800 hover:border-gray-900">
+                    {l({ zh: '看完整經歷（可依職能篩選）→', en: 'Full experience, filterable by function →' })}
+                </Link>
             </Section>
 
             {/* 聯絡：唐崇達「不要對買家下命令」 */}

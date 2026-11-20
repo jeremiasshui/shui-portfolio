@@ -10,7 +10,7 @@ export default function Header() {
     const nav = [
         { href: '/#work', label: { zh: '作品', en: 'Work' } },
         { href: '/work/jb-salad', label: { zh: '實戰案例', en: 'Real Case' } },
-        { href: '/#about', label: { zh: '關於我', en: 'About' } },
+        { href: '/about', label: { zh: '經歷', en: 'Experience' } },
     ];
 
     return (

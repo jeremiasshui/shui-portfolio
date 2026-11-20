@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { portfolioData } from "@/data/portfolio-data";
+import { allCases } from "@/data/all-cases";
 import { caseMeta, categories } from "@/data/case-meta";
 import { SITE } from "@/data/site";
 import CaseView from "@/components/CaseView";
@@ -8,14 +8,14 @@ import CaseView from "@/components/CaseView";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return portfolioData.map((p) => ({ id: p.id }));
+  return allCases.map((p) => ({ id: p.id }));
 }
 
 type Props = { params: Promise<{ id: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
-  const item = portfolioData.find((p) => p.id === id);
+  const item = allCases.find((p) => p.id === id);
   if (!item) return {};
   const meta = caseMeta[id];
   const title = `${item.industry.zh}文案提案：${item.subtitle.zh}`;
@@ -24,13 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: `/work/${id}` },
-    openGraph: { title, description, type: "article", images: [item.image] },
+    openGraph: { title, description, type: "article", ...(item.image ? { images: [item.image] } : {}) },
   };
 }
 
 export default async function CasePage({ params }: Props) {
   const { id } = await params;
-  const item = portfolioData.find((p) => p.id === id);
+  const item = allCases.find((p) => p.id === id);
   if (!item) notFound();
   const meta = caseMeta[id];
   const cat = categories.find((c) => c.id === meta.category)!;
@@ -45,7 +45,7 @@ export default async function CasePage({ params }: Props) {
         description: meta.angle.zh,
         genre: "模擬提案（Spec work）",
         inLanguage: ["zh-Hant-TW", "en"],
-        image: `${SITE.url}${item.image}`,
+        ...(item.image ? { image: `${SITE.url}${item.image}` } : {}),
         url,
         author: { "@id": `${SITE.url}/#person` },
         audience: { "@type": "Audience", audienceType: meta.audience.zh },

@@ -2,11 +2,13 @@ import React from 'react';
 
 /** 行內粗體：**text** → <strong> */
 function inline(text: string, key: string): React.ReactNode[] {
-    return text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean).map((part, i) =>
-        part.startsWith('**') && part.endsWith('**')
-            ? <strong key={`${key}-${i}`} className="font-semibold text-gray-900">{part.slice(2, -2)}</strong>
-            : <React.Fragment key={`${key}-${i}`}>{part}</React.Fragment>
-    );
+    return text.split(/(\*\*[^*]+\*\*|\*[^*\s][^*]*\*)/g).filter(Boolean).map((part, i) => {
+        if (part.startsWith('**') && part.endsWith('**'))
+            return <strong key={`${key}-${i}`} className="font-semibold text-gray-900">{part.slice(2, -2)}</strong>;
+        if (part.length > 2 && part.startsWith('*') && part.endsWith('*'))
+            return <em key={`${key}-${i}`} className="text-gray-600">{part.slice(1, -1)}</em>;
+        return <React.Fragment key={`${key}-${i}`}>{part}</React.Fragment>;
+    });
 }
 
 function splitRow(line: string) {

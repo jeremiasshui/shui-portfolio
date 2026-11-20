@@ -2,9 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import Cover from './Cover';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { portfolioData, type PortfolioItem } from '@/data/portfolio-data';
+import type { PortfolioItem } from '@/data/portfolio-data';
+import { allCases } from '@/data/all-cases';
 import { caseMeta, categories, versionTabs } from '@/data/case-meta';
 import { SITE } from '@/data/site';
 import Markdown from './Markdown';
@@ -17,7 +18,7 @@ export default function CaseView({ item }: { item: PortfolioItem }) {
     const meta = caseMeta[item.id];
     const [tab, setTab] = useState<TabKey>('seo');
     const cat = categories.find((c) => c.id === meta.category)!;
-    const related = portfolioData
+    const related = allCases
         .map((p, index) => ({ p, index }))
         .filter(({ p }) => p.id !== item.id && caseMeta[p.id]?.category === meta.category)
         .slice(0, 4);
@@ -51,7 +52,7 @@ export default function CaseView({ item }: { item: PortfolioItem }) {
 
                 <div className="px-4 sm:px-6">
                     <div className="max-w-5xl mx-auto relative aspect-[21/9] rounded-xl overflow-hidden bg-gray-100">
-                        <Image src={item.image} alt={l(item.subtitle)} fill priority sizes="(min-width: 1024px) 1024px, 100vw" className="object-cover" />
+                        <Cover item={item} priority sizes="(min-width: 1024px) 1024px, 100vw" />
                     </div>
                 </div>
 

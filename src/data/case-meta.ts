@@ -172,6 +172,78 @@ export const caseMeta: Record<string, CaseMeta> = {
         angle: { zh: '用技術白皮書的語氣建立信任，再用蘭花案例讓技術有溫度', en: 'Build trust in a technical white-paper voice, then warm it up with an orchid story' },
         ga4: [ev('generate_lead', '送出技術洽詢', 'Technical enquiry submitted', true), ev('file_download', '下載技術規格', 'Technical spec downloaded'), ev('case_study_view', '查看應用案例', 'Case study viewed')],
     },
+
+    /* ── 第二批：docs/*.docx 轉入 ── */
+    '22-ai': {
+        category: 'tech', accent: '#C2410C',
+        audience: { zh: '想導入 AI 工具、但分不清各產品差異的主管與上班族', en: 'Managers and staff who want to adopt AI tools but can’t tell the products apart' },
+        pain: { zh: 'Claude Code、Skills、Cowork 名稱相近，不知道哪一個適合自己的團隊', en: 'Claude Code, Skills and Cowork sound alike; unclear which fits their team' },
+        angle: { zh: '用比較表依「誰在用、拿來做什麼」把三個工具分開，再用三個部門的一天讓讀者對號入座', en: 'Separate the tools by who uses them and for what, then let readers find themselves in three colleagues’ workdays' },
+        ga4: [ev('generate_lead', '預約導入諮詢', 'Adoption consultation booked', true), ev('compare_table_view', '讀到產品比較表', 'Comparison table viewed'), ev('file_download', '下載比較表', 'Comparison sheet downloaded')],
+    },
+    '23-preventive': {
+        category: 'health', accent: '#0E7490',
+        audience: { zh: '四十歲前後、開始在意健康的上班族', en: 'Working adults around forty who are starting to care about their health' },
+        pain: { zh: '健康資訊又多又雜，不知道該從哪個生活習慣開始改', en: 'Health advice is overwhelming; no idea which habit to change first' },
+        angle: { zh: '用「生活醫學六大支柱」把預防醫學拆成可以逐項檢查的框架，再用四十歲的轉念故事打動讀者', en: 'Turn prevention into a checkable six-pillar framework, then move readers with a turning-point story at forty' },
+        ga4: [ev('generate_lead', '預約健康諮詢', 'Health consultation booked', true), ev('self_assessment_complete', '完成生活型態自評', 'Lifestyle self-assessment completed'), ev('newsletter_signup', '訂閱健康電子報', 'Newsletter signup')],
+    },
+    '24-tutoring': {
+        category: 'edu', accent: '#6D28D9',
+        audience: { zh: '正在幫孩子挑補習班的國中小家長', en: 'Parents choosing a tutoring centre for their child' },
+        pain: { zh: '選擇太多，每家廣告都說自己最好，不知道怎麼比', en: 'Too many options, and every ad claims to be the best' },
+        angle: { zh: '不推薦哪一家，而是給家長一套評估框架（教學、師資、環境、費用），讓家長自己比', en: 'Instead of recommending one, give parents an evaluation framework (teaching, staff, setting, cost) to compare themselves' },
+        ga4: [ev('generate_lead', '預約試聽', 'Trial class booked', true), ev('compare_table_view', '讀到類型比較表', 'Comparison table viewed'), ev('click_line', '點擊 LINE 諮詢', 'LINE chat clicked')],
+    },
+    '25-vegetarian': {
+        category: 'food', accent: '#15803D',
+        audience: { zh: '想開始吃素、或想少吃點肉的外食族', en: 'Diners who want to go vegetarian or eat less meat' },
+        pain: { zh: '分不清全素、蛋奶素、鍋邊素，也擔心營養不夠', en: 'Confused by vegan vs. lacto-ovo vs. flexible vegetarian, and worried about nutrition' },
+        angle: { zh: '先把素食類型講清楚，再用「一個月蔬食實驗」降低嘗試的門檻', en: 'Clarify the types first, then lower the barrier with a one-month plant-based experiment' },
+        ga4: [ev('reservation', '完成線上訂位', 'Table booked online', true), ev('menu_view', '查看菜單', 'Menu viewed'), ev('click_map', '點擊地圖導航', 'Map directions clicked')],
+    },
+    '26-agriculture': {
+        category: 'food', accent: '#4D7C0F',
+        audience: { zh: '重視食材來源、願意為品質多付一點的家庭採買者', en: 'Household shoppers who care about sourcing and will pay for quality' },
+        pain: { zh: '分不清「產地直送」「友善耕作」「產銷履歷」是不是行銷話術', en: 'Can’t tell whether “farm-direct”, “eco-friendly” and “traceable” are just marketing' },
+        angle: { zh: '用精緻農業和傳統農業的比較把差異說清楚，再用週六早晨開箱的場景帶出訂購', en: 'Compare premium and conventional farming clearly, then lead to ordering with a Saturday-morning unboxing scene' },
+        ga4: [ev('subscribe', '訂閱蔬果箱', 'Produce box subscribed', true), ev('add_to_cart', '加入購物車', 'Item added to cart'), ev('traceability_lookup', '查詢產銷履歷', 'Traceability record looked up')],
+    },
+    '27-bakery-startup': {
+        category: 'edu', accent: '#A16207',
+        audience: { zh: '想把烘焙興趣變成副業或工作室的人', en: 'Home bakers who want to turn a hobby into a side business or studio' },
+        pain: { zh: '從家庭廚房到開工作室，不知道設備、技術和經營要準備什麼', en: 'Unsure what equipment, skills and business basics a studio needs' },
+        angle: { zh: '依技術門檻與設備需求拆解烘焙類型，再用一個失敗的戚風蛋糕陪讀者起步', en: 'Break baking down by skill and equipment, then start alongside the reader with a failed chiffon cake' },
+        ga4: [ev('generate_lead', '送出課程或開業諮詢', 'Course or startup enquiry submitted', true), ev('file_download', '下載開業準備清單', 'Startup checklist downloaded'), ev('faq_expand', '展開常見問題', 'FAQ item expanded')],
+    },
+    '28-senior-care': {
+        category: 'health', accent: '#9A3412',
+        audience: { zh: '正要為父母做照護決定的中年子女', en: 'Adult children deciding on care for their parents' },
+        pain: { zh: '居家照顧、外籍看護、機構怎麼選？補助怎麼申請？資訊很零散', en: 'Home care, live-in carer or facility? How do subsidies work? The information is scattered' },
+        angle: { zh: '用比較表和補助額度把選項攤開，再用「凌晨那通電話」的場景同理照顧者', en: 'Lay out options and subsidy levels side by side, then empathise with carers through a 3 a.m. phone call' },
+        ga4: [ev('generate_lead', '預約長照規劃諮詢', 'Care-planning consultation booked', true), ev('subsidy_table_view', '讀到補助額度表', 'Subsidy table viewed'), ev('click_call', '點擊電話', 'Phone number tapped')],
+    },
+    '29-medical-devices': {
+        category: 'health', accent: '#0369A1',
+        audience: { zh: '為家中長輩添購居家醫療器材的家人', en: 'Family members buying home medical devices for older relatives' },
+        pain: { zh: '血壓計、血糖機的規格看不懂，怕買到不準或不合用的', en: 'Can’t read the specs and fear buying something inaccurate or unsuitable' },
+        angle: { zh: '依監測、輔具等類別整理選購要點，再用「一台血壓計改變爸爸」的故事收尾', en: 'Organise buying points by device type, then close with how one blood-pressure monitor changed a father’s habits' },
+        ga4: [ev('purchase', '完成購買', 'Order completed', true), ev('add_to_cart', '加入購物車', 'Item added to cart'), ev('buying_guide_view', '讀到選購要點', 'Buying guide viewed')],
+    },
+    '30-grants': {
+        category: 'b2b', accent: '#1D4ED8',
+        audience: { zh: '想申請政府資源的新創團隊與中小企業', en: 'Startups and SMEs seeking government funding' },
+        pain: { zh: '補助種類多、程序繁瑣，不知道自己適合哪一種', en: 'Many schemes and complex procedures; unclear which one fits' },
+        angle: { zh: '把補助依類型與適用對象整理成表，再用一個申請到 SBIR 的團隊故事降低心理門檻', en: 'Map grants by type and eligibility, then lower the barrier with a team that won SBIR funding' },
+        ga4: [ev('generate_lead', '預約申請諮詢', 'Application consultation booked', true), ev('eligibility_check', '完成資格自評', 'Eligibility self-check completed'), ev('file_download', '下載申請檢核表', 'Application checklist downloaded')],
+    },
+    '31-esg': {
+        category: 'b2b', accent: '#047857',
+        audience: { zh: '想啟動 ESG、但沒有專責團隊的中小企業主', en: 'SME owners who want to start on ESG without a dedicated team' },
+        pain: { zh: '覺得 ESG 是大企業的事，不知道小公司能從哪裡開始、怎麼被看見', en: 'See ESG as a big-company topic; unsure where a small firm starts or how to get recognised' },
+        angle: { zh: '以一家觀光工廠的認證歷程當案例，每個數據都附官方來源', en: 'Use one tourism factory’s certification journey as the case, with an official source for every figure' },
+        ga4: [ev('generate_lead', '預約 ESG 諮詢', 'ESG consultation booked', true), ev('file_download', '下載認證清單', 'Certification list downloaded'), ev('case_study_view', '查看完整案例', 'Full case viewed')],
+    },
 };
 
 /** 精選三案：依讀者產業導讀（唐崇達：不要放任消費者海選） */
