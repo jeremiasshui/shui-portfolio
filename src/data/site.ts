@@ -1,6 +1,6 @@
 export const SITE = {
     url: 'https://shui-portfolio.vercel.app',
-    version: 'v2.1',
+    version: 'v2.2',
     email: 'jeremiasshui@gmail.com',
     github: 'https://github.com/jeremiasshui',
     name: { zh: '水彥捷', en: 'Jeremy Shui' },

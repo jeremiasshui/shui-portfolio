@@ -37,6 +37,12 @@ export default function AboutView() {
                             en: 'In the past two years I have extended this to generative AI: AI speeds things up, people stay accountable. Every output must trace back to a source and pass human review.',
                         })}
                     </p>
+                    <p className="mt-4 text-sm text-gray-600 leading-relaxed max-w-3xl rounded-lg bg-gray-50 px-4 py-3">
+                        {l({
+                            zh: '關於近年的任職時間：2020 到 2025 年間，我協助母親照顧生病的父親，因此多選擇約聘與專案工作。現在照護已經結束，我希望找一份能長期投入的全職工作。',
+                            en: 'About my recent tenures: from 2020 to 2025 I helped my mother care for my ill father, so I mostly took contract and project roles. That period has ended, and I am now looking for a long-term, full-time position.',
+                        })}
+                    </p>
                 </div>
             </section>
 
@@ -74,7 +80,7 @@ export default function AboutView() {
                     <ol className="mt-8 relative border-l border-gray-200 ml-2 space-y-8">
                         {jobs.filter((j) => skill === 'all' || j.skills.includes(skill)).map((j) => (
                             <li key={j.period + j.org.zh} className="pl-6 relative">
-                                <span className={`absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full ${j.selfStudy ? 'bg-white border-2 border-teal-700' : 'bg-teal-700'}`} />
+                                <span className={`absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full ${j.gap ? 'bg-gray-300' : j.selfStudy ? 'bg-white border-2 border-teal-700' : 'bg-teal-700'}`} />
                                 <p className="text-xs text-gray-500 tabular-nums">{j.period}</p>
                                 <h3 className="mt-0.5 text-lg font-semibold text-gray-900">
                                     {l(j.title)}<span className="text-gray-300 mx-1.5">｜</span><span className="font-normal text-gray-700">{l(j.org)}</span>
@@ -101,7 +107,9 @@ export default function AboutView() {
                         {projects.map((p) => (
                             <div key={p.title.zh} className="rounded-xl bg-white border border-gray-100 p-5">
                                 <p className="text-xs text-gray-500">{p.period}</p>
-                                <h3 className="mt-1 font-semibold text-gray-900">{l(p.title)}</h3>
+                                <h3 className="mt-1 font-semibold text-gray-900">
+                                    {p.url ? <a href={p.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 decoration-gray-300 hover:decoration-teal-700">{l(p.title)} ↗</a> : l(p.title)}
+                                </h3>
                                 <p className="mt-2 text-sm text-gray-600 leading-relaxed">{l(p.desc)}</p>
                             </div>
                         ))}

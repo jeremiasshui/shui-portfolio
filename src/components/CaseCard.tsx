@@ -9,8 +9,8 @@ export default function CaseCard({ item, index }: { item: PortfolioItem; index: 
     const { l } = useLanguage();
     return (
         <Link href={`/work/${item.id}`} className="group block">
-            <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-gray-100">
-                <Cover item={item} sizes="(min-width: 1024px) 25vw, 50vw" className="transition duration-500 sm:grayscale sm:group-hover:grayscale-0 group-hover:scale-[1.02]" />
+            <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-gray-100 shadow-sm transition-shadow duration-300 group-hover:shadow-lg">
+                <Cover item={item} sizes="(min-width: 1024px) 25vw, 50vw" className="transition-transform duration-700 ease-out motion-safe:group-hover:scale-105" />
                 <span className="absolute top-2 left-2 rounded bg-white/90 px-1.5 py-0.5 text-[10px] tracking-wide text-gray-600">
                     {l({ zh: '模擬提案', en: 'Spec work' })}
                 </span>

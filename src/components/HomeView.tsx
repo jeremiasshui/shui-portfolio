@@ -136,8 +136,8 @@ export default function HomeView() {
                         const item = allCases.find((p) => p.id === f.id)!;
                         return (
                             <Link key={f.id} href={`/work/${f.id}`} className="group rounded-xl bg-white border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow">
-                                <div className="relative aspect-[16/9]">
-                                    <Cover item={item} sizes="(min-width: 640px) 33vw, 100vw" />
+                                <div className="relative aspect-[16/9] overflow-hidden">
+                                    <Cover item={item} sizes="(min-width: 640px) 33vw, 100vw" className="transition-transform duration-700 ease-out motion-safe:group-hover:scale-105" />
                                 </div>
                                 <div className="p-5">
                                     <p className="text-xs text-teal-700 font-medium">{l({ zh: '如果', en: 'If ' })}{l(f.who)}</p>

@@ -25,6 +25,7 @@ export type Job = {
     skills: SkillId[];
     points: Bi[];
     selfStudy?: boolean;
+    gap?: boolean;
 };
 
 const b = (zh: string, en: string): Bi => ({ zh, en });
@@ -84,6 +85,15 @@ export const jobs: Job[] = [
         ],
     },
     {
+        period: '2023/11 – 2025/5', gap: true,
+        title: b('家庭照護', 'Family caregiving'),
+        org: b('全職照顧家人', 'Full-time family care'),
+        skills: [],
+        points: [
+            b('協助母親照顧生病的父親，此期間未受雇。照護已結束，目前可長期全職投入。', 'Helped my mother care for my ill father; not employed during this period. Caregiving has ended and I am available for long-term, full-time work.'),
+        ],
+    },
+    {
         period: '2023/3 – 2023/10',
         title: b('約聘行政人員', 'Contract Administrative Officer'),
         org: b('經濟部地質調查及礦業管理中心', 'Geological Survey and Mining Management Agency, MOEA'),
@@ -131,6 +141,7 @@ export const jobs: Job[] = [
         points: [
             b('從零建立需求調查、OEM 生產、SGS 檢驗、包裝、定價、上架到物流交付的完整流程。', 'Built the full product flow from demand research, OEM, SGS testing and packaging to pricing, listing and delivery.'),
             b('親自做商品攝影、文案、包裝與視覺；以 Excel 成本會計分析每克單位成本作為定價依據，並協調印刷工廠的品質與交期。', 'Handled product photography, copy, packaging and visuals; priced from per-gram unit cost in Excel; managed printer quality and lead times.'),
+            b('PM2.5 與焚香空污議題受到關注後，線香市場需求下滑；評估後於 2020 年結束營業，之後回到組織內工作。', 'After PM2.5 and incense-smoke concerns cut demand for incense, I closed the business in 2020 and returned to employment.'),
         ],
     },
     {
@@ -192,9 +203,10 @@ export const highlights: { num: string; label: Bi }[] = [
     { num: '35 項', label: b('2 個工作天、10 輪校準盤點的戰略品項', 'strategic items identified in 2 days, 10 calibration rounds') },
 ];
 
-export const projects: { title: Bi; period: string; desc: Bi }[] = [
+export const projects: { title: Bi; period: string; desc: Bi; url?: string }[] = [
     {
         title: b('AI 多代理文案寫審流程', 'Multi-agent AI copy writing & review pipeline'), period: '2026',
+        url: 'https://github.com/jeremiasshui/zhuangzhuang-nutrition-social-portfolio',
         desc: b('以 Claude Code 建立「寫手 → 審稿 → 修正」流程：4 個平台寫手、5 個審稿角色（品牌、營養、證據、法規、受眾）；驗收清單全數通過才算完成，最多 3 回合後交由人工決定。另寫 PRD、SDD 與 5 份設計決策紀錄，建立 6 組黃金樣本與自動檢查。', 'Built a writer → reviewer → fixer pipeline in Claude Code: 4 platform writers, 5 reviewer roles (brand, nutrition, evidence, regulation, audience); done only when every acceptance check passes, with a human decision after 3 rounds. Includes a PRD, SDD, 5 decision records, 6 golden samples and automated checks.'),
     },
     {

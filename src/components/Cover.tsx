@@ -16,7 +16,7 @@ export default function Cover({ item, sizes, priority = false, className = '' }:
         <div
             role="img"
             aria-label={l(item.subtitle)}
-            className="absolute inset-0 flex flex-col justify-end p-4 sm:p-5"
+            className={`absolute inset-0 flex flex-col justify-end p-4 sm:p-5 ${className}`}
             style={{ background: `linear-gradient(135deg, ${accent} 0%, ${accent}CC 55%, #111827 100%)` }}
         >
             <span className="text-white/70 text-[11px] tracking-[0.2em]">{l(item.industry)}</span>

@@ -244,6 +244,42 @@ export const caseMeta: Record<string, CaseMeta> = {
         angle: { zh: '以一家觀光工廠的認證歷程當案例，每個數據都附官方來源', en: 'Use one tourism factory’s certification journey as the case, with an official source for every figure' },
         ga4: [ev('generate_lead', '預約 ESG 諮詢', 'ESG consultation booked', true), ev('file_download', '下載認證清單', 'Certification list downloaded'), ev('case_study_view', '查看完整案例', 'Full case viewed')],
     },
+    /* ── 第三批：新增趨勢產業 ── */
+    '32-crossborder': {
+        category: 'b2b', accent: '#0F766E',
+        audience: { zh: '已在台灣站穩、想把商品賣到海外的中小品牌', en: 'Taiwanese SMEs established at home and looking to sell overseas' },
+        pain: { zh: '不知道該先選平台還是市場，也怕物流、退貨和匯率把利潤吃光', en: 'Unsure whether to pick a platform or market first, and afraid logistics, returns and FX will eat the margin' },
+        angle: { zh: '先給「出海前 5 件事」的決策框架，再用一張來自吉隆坡的訂單，讓小品牌相信自己也做得到', en: 'Give a five-point pre-launch framework, then show with one Kuala Lumpur order that small brands can do it too' },
+        ga4: [ev('generate_lead', '預約出海諮詢', 'Going-global consultation booked', true), ev('cost_calculator_use', '使用跨境成本試算', 'Cross-border cost calculator used'), ev('file_download', '下載出海檢核表', 'Pre-launch checklist downloaded')],
+    },
+    '33-3c': {
+        category: 'tech', accent: '#334155',
+        audience: { zh: '要買筆電、但看不懂規格表的學生與家長', en: 'Students and parents buying a laptop who can’t read spec sheets' },
+        pain: { zh: '規格名詞太多，怕買太貴用不到，也怕買太便宜不夠用', en: 'Too much jargon; afraid of overpaying or underbuying' },
+        angle: { zh: '不比規格，先問「主要拿來做什麼」，用用途對照表把選擇縮小', en: 'Skip the spec race; start from “what will you use it for” and narrow choices with a use-case table' },
+        ga4: [ev('purchase', '完成購買', 'Order completed', true), ev('use_case_filter', '使用用途篩選', 'Use-case filter applied'), ev('compare_add', '加入比較清單', 'Added to comparison')],
+    },
+    '34-baby': {
+        category: 'life', accent: '#BE185D',
+        audience: { zh: '第一次當爸媽、正在準備待產用品的家庭', en: 'First-time parents preparing for a new baby' },
+        pain: { zh: '網路清單太長，怕少買一樣就虧待孩子，結果買了一堆用不到', en: 'Endless online lists; fear of missing something leads to buying things they never use' },
+        angle: { zh: '依「什麼時候會用到」分成三類，再用凌晨三點的購物車同理新手爸媽的焦慮', en: 'Sort items by when they are needed, then empathise with new-parent anxiety through a 3 a.m. shopping cart' },
+        ga4: [ev('purchase', '完成購買', 'Order completed', true), ev('checklist_download', '下載待產清單', 'Checklist downloaded'), ev('add_to_cart', '加入購物車', 'Item added to cart')],
+    },
+    '35-wedding': {
+        category: 'life', accent: '#9D174D',
+        audience: { zh: '剛決定結婚、開始籌備婚禮的新人', en: 'Newly engaged couples starting to plan their wedding' },
+        pain: { zh: '不知道什麼時候該做什麼，也常為了預算和賓客名單跟家人意見不合', en: 'Don’t know what to do when, and clash with family over budget and guest list' },
+        angle: { zh: '用時間軸把籌備拆成五個階段，再用一張畫滿紅線的賓客名單帶出婚顧的價值', en: 'Break planning into five stages on a timeline, then show a planner’s value through a guest list covered in red ink' },
+        ga4: [ev('generate_lead', '預約婚禮諮詢', 'Wedding consultation booked', true), ev('timeline_download', '下載籌備時間軸', 'Planning timeline downloaded'), ev('package_view', '查看服務方案', 'Service packages viewed')],
+    },
+    '36-interior': {
+        category: 'life', accent: '#78350F',
+        audience: { zh: '第一次買房、準備裝修的屋主', en: 'First-time homeowners preparing to renovate' },
+        pain: { zh: '怕工程拖延、預算一路追加，也不知道要找設計師還是統包', en: 'Fear delays and budget creep; unsure whether to hire a designer or a contractor' },
+        angle: { zh: '把裝修拆成 7 個步驟和三種合作方式比較，再用「看不到的防水」說明專業的價值', en: 'Lay out 7 steps and compare three ways to work, then use invisible waterproofing to show what expertise is worth' },
+        ga4: [ev('generate_lead', '預約丈量諮詢', 'Site survey consultation booked', true), ev('portfolio_view', '瀏覽作品案例', 'Project portfolio viewed'), ev('budget_calculator_use', '使用裝修預算試算', 'Renovation budget calculator used')],
+    },
 };
 
 /** 精選三案：依讀者產業導讀（唐崇達：不要放任消費者海選） */
