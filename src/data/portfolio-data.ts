@@ -16,10 +16,10 @@ export const portfolioData: PortfolioItem[] = [
         id: '01-health',
         industry: { en: 'Health Supplements', zh: '保健食品' },
         subtitle: { en: 'High-Concentration Deep-Sea Fish Oil', zh: '高濃度深海魚油' },
-        image: '/images/01-health.png',
+        image: '/images/01-health.webp',
         content: {
             seo: {
-                en: `### 2025 Fish Oil Guide: Why High-Concentration Omega-3 Has Become a Modern Essential
+                en: `### 2026 Fish Oil Guide: Why High-Concentration Omega-3 Has Become a Modern Essential
 
 Every morning, as sunlight filters through your curtains, you pour yourself a glass of warm water and prepare to embrace a new day.
 
@@ -50,7 +50,7 @@ One capsule daily—like sending a love letter from the deep sea to your body, a
 Office workers who spend long hours at computers, students preparing for exams, middle-aged individuals seeking to maintain vitality, and expectant mothers can all benefit from Omega-3 supplementation.
 
 **Key Takeaway**: Choose high-concentration, rTG-form fish oil sourced from small fish. Take it after meals, maintain consistency, and let each day unfold with ease.`,
-                zh: `### 2025魚油推薦指南：為什麼高濃度Omega-3，是現代人的日常必需？
+                zh: `### 2026魚油推薦指南：為什麼高濃度Omega-3，是現代人的日常必需？
 
 每天早晨，當陽光穿透窗簾，你為自己倒一杯溫水，準備迎接新的一天。
 
@@ -270,7 +270,7 @@ Whether you live beside the metro station or tucked away in a mountain-side alle
         id: '02-aesthetic',
         industry: { en: 'Aesthetic Medicine', zh: '醫美診所' },
         subtitle: { en: 'Picosecond Laser Treatment', zh: '皮秒雷射淡斑療程' },
-        image: '/images/02-aesthetic.png',
+        image: '/images/02-aesthetic.webp',
         content: {
             seo: {
                 en: `### The Complete Guide to Picosecond Laser: For Those Seeking Radiant, Even-Toned Skin
@@ -524,7 +524,7 @@ You know that in a few weeks, you'll like the face in the mirror even more than 
         id: '03-pet',
         industry: { en: 'Pet Supplies', zh: '寵物用品' },
         subtitle: { en: 'Freeze-Dried Cat Food', zh: '貓咪主食凍乾' },
-        image: '/images/03-pet.png',
+        image: '/images/03-pet.webp',
         content: {
             seo: {
                 en: `### Freeze-Dried Cat Food Recommendations: The Most Natural Diet Choice for Your Feline
@@ -773,7 +773,7 @@ Days with a cat don't need to be complicated. A pack of good freeze-dried, a fur
         id: '04-education',
         industry: { en: 'Online Education', zh: '線上課程' },
         subtitle: { en: 'AI Art Generation Masterclass', zh: 'AI繪圖工具實戰班' },
-        image: '/images/04-education.png',
+        image: '/images/04-education.webp',
         content: {
             seo: {
                 en: `### AI Art for Beginners: A Complete Guide to Creating Stunning Images with Zero Drawing Skills
@@ -1045,7 +1045,7 @@ Tomorrow when you wake up, you'll see the world you created.`,
         id: '05-green',
         industry: { en: 'Green Energy', zh: '綠能產業' },
         subtitle: { en: 'Home EV Charging Station', zh: '家用電動車充電樁' },
-        image: '/images/05-green.png',
+        image: '/images/05-green.webp',
         content: {
             seo: {
                 en: `### Complete Guide to Home EV Charging Station Installation: Let Your Car Charge at Home
@@ -1305,7 +1305,7 @@ The city slowly quiets, while your life fills with energy, one bar at a time.`,
         id: '06-beverage',
         industry: { en: 'Beverage Industry', zh: '手搖飲' },
         subtitle: { en: 'Estate-Grade Premium Black Tea', zh: '莊園級精品紅茶' },
-        image: '/images/06-beverage.png',
+        image: '/images/06-beverage.webp',
         content: {
             seo: {
                 en: `### Premium Black Tea Guide: From Origin to Cup, Savoring Tea with a Story
@@ -1573,7 +1573,7 @@ Outside the window, the city rushes on. But your world has temporarily slowed do
         id: '07-ecommerce',
         industry: { en: 'E-commerce', zh: '電商平台' },
         subtitle: { en: 'Subscription Shopping', zh: '會員訂閱制購物' },
-        image: '/images/07-ecommerce.png',
+        image: '/images/07-ecommerce.webp',
         content: {
             seo: {
                 en: `### The Complete Guide to Subscription Shopping: Let Quality Products Come to You Automatically
@@ -1853,7 +1853,7 @@ And you've already begun to enjoy this weekend morning.`,
         id: '08-fitness',
         industry: { en: 'Fitness Industry', zh: '健身產業' },
         subtitle: { en: '24-Hour Smart Gym', zh: '24小時智能健身房' },
-        image: '/images/08-fitness.png',
+        image: '/images/08-fitness.webp',
         content: {
             seo: {
                 en: `### 24-Hour Smart Gym Guide: Exercise Whenever You Want
@@ -2157,7 +2157,7 @@ This city never sleeps, and neither does your desire to live better.`,
         id: '09-coffee',
         industry: { en: 'Convenience Store', zh: '便利商店' },
         subtitle: { en: 'Freshly Brewed Specialty Coffee', zh: '現萃精品咖啡' },
-        image: '/images/09-coffee.png',
+        image: '/images/09-coffee.webp',
         content: {
             seo: {
                 en: `### Convenience Store Specialty Coffee Guide: Quality Coffee, One Block Away
@@ -2463,7 +2463,7 @@ Who says mornings have to be a struggle? Sometimes all it takes is one good cup 
         id: '10-delivery',
         industry: { en: 'Food Delivery', zh: '餐飲外送' },
         subtitle: { en: 'Subscription Delivery Plan', zh: '跨店訂閱優惠方案' },
-        image: '/images/10-delivery.png',
+        image: '/images/10-delivery.webp',
         content: {
             seo: {
                 en: `### Food Delivery Subscription Guide: Is Unlimited Free Delivery Worth It?
@@ -2777,7 +2777,7 @@ This is the comfort that delivery subscription provides—bad weather days, stay
         id: '11-coldchain',
         industry: { en: 'Cold Chain Logistics', zh: '冷鏈物流' },
         subtitle: { en: 'Industry White Paper', zh: '產業白皮書' },
-        image: '/images/11-coldchain.png',
+        image: '/images/11-coldchain.webp',
         content: {
             seo: {
                 en: `### Cold Chain Logistics White Paper: The Invisible Infrastructure of Food Safety
@@ -3145,7 +3145,7 @@ You might never see the refrigerated trucks on the highway, or the warehouse wor
         id: '12-travel',
         industry: { en: 'Travel & Tourism', zh: '旅遊業' },
         subtitle: { en: 'Customized In-Depth Tours', zh: '客製化深度旅遊' },
-        image: '/images/12-travel.png',
+        image: '/images/12-travel.webp',
         content: {
             seo: {
                 en: `### Customized In-Depth Tours: Travel That Truly Belongs to You
@@ -3445,12 +3445,12 @@ Tomorrow, another day designed just for you. No rushing. No tour buses. Just Kyo
         id: '13-realestate',
         industry: { en: 'Real Estate', zh: '房地產' },
         subtitle: { en: 'Smart Community Living', zh: '智慧社區住宅' },
-        image: '/images/13-realestate.png',
+        image: '/images/13-realestate.webp',
         content: {
             seo: {
                 en: `### Smart Community Living: Where Technology Meets Home
 
-What does "home" mean in 2025?
+What does "home" mean in 2026?
 
 It's no longer just four walls and a roof. Modern living demands homes that understand us, protect us, and make daily life effortless.
 
@@ -3498,7 +3498,7 @@ A smart community integrates IoT (Internet of Things) technology throughout the 
 **Key Takeaway**: Smart communities transform housing from shelter to lifestyle enhancement. The right smart home doesn't just respond to commands—it anticipates needs.`,
                 zh: `### 智慧社區住宅：當科技遇見家
 
-2025年的「家」是什麼樣子？
+2026年的「家」是什麼樣子？
 
 不再只是四面牆和一個屋頂。現代生活需要懂我們、保護我們、讓日常生活毫不費力的家。
 
@@ -3783,7 +3783,7 @@ Technology that disappears into comfort.`,
         id: '14-fintech',
         industry: { en: 'FinTech', zh: '金融科技' },
         subtitle: { en: 'Digital Banking Account', zh: '數位銀行帳戶' },
-        image: '/images/14-fintech.png',
+        image: '/images/14-fintech.webp',
         content: {
             seo: {
                 en: `### Digital Banking Guide: Banking Without the Bank
@@ -4151,7 +4151,7 @@ Neither do you.`,
         id: '15-edtech',
         industry: { en: 'EdTech', zh: '教育科技' },
         subtitle: { en: 'Kids Coding Education', zh: '兒童程式教育' },
-        image: '/images/15-edtech.png',
+        image: '/images/15-edtech.webp',
         content: {
             seo: {
                 en: `### Kids Coding Education: Why Your Child Should Learn to Code
@@ -4525,7 +4525,7 @@ And this is just the beginning.`,
         id: '16-beauty',
         industry: { en: 'Beauty & Skincare', zh: '美妝保養' },
         subtitle: { en: 'Clean Beauty Products', zh: '純淨美容保養品' },
-        image: '/images/16-beauty.png',
+        image: '/images/16-beauty.webp',
         content: {
             seo: {
                 en: `### Clean Beauty Guide: What You Put on Your Skin Matters
@@ -4903,7 +4903,7 @@ Sometimes less isn't just more. It's everything.`,
         id: '17-smarthome',
         industry: { en: 'Smart Home', zh: '智慧家居' },
         subtitle: { en: 'Home Automation System', zh: '居家自動化系統' },
-        image: '/images/17-smarthome.png',
+        image: '/images/17-smarthome.webp',
         content: {
             seo: {
                 en: `### Smart Home Automation: Your Home That Thinks for You
@@ -4912,7 +4912,7 @@ Sometimes less isn't just more. It's everything.`,
 
 The lights come on. The temperature adjusts. Your favorite playlist starts. The coffee maker begins brewing.
 
-This isn't science fiction. This is smart home automation in 2025.
+This isn't science fiction. This is smart home automation in 2026.
 
 #### What Is Home Automation?
 
@@ -4961,7 +4961,7 @@ Home automation connects your devices—lights, thermostats, locks, appliances�
 
 燈亮起來。溫度調整好。你最愛的播放清單開始播放。咖啡機開始沖泡。
 
-這不是科幻小說。這是2025年的智慧家居自動化。
+這不是科幻小說。這是2026年的智慧家居自動化。
 
 #### 什麼是居家自動化？
 
@@ -5273,7 +5273,7 @@ A partner that knows you.`,
         id: '18-plantbased',
         industry: { en: 'Food & Beverage', zh: '餐飲業' },
         subtitle: { en: 'Plant-Based Restaurant', zh: '植物肉餐廳' },
-        image: '/images/18-plantbased.png',
+        image: '/images/18-plantbased.webp',
         content: {
             seo: {
                 en: `### Plant-Based Dining Guide: The Future of Food Is Here
@@ -5655,7 +5655,7 @@ Sometimes it's just one bite at a time.`,
         id: '19-outdoor',
         industry: { en: 'Outdoor Recreation', zh: '戶外休閒' },
         subtitle: { en: 'Camping Gear Rental', zh: '露營裝備租賃' },
-        image: '/images/19-outdoor.png',
+        image: '/images/19-outdoor.webp',
         content: {
             seo: {
                 en: `### Camping Gear Rental Guide: Experience the Outdoors Without Breaking the Bank
@@ -6043,7 +6043,7 @@ And those, you get to keep forever.`,
         id: '20-bakery',
         industry: { en: 'Bakery', zh: '烘焙蛋糕' },
         subtitle: { en: 'Artisan Custom Cakes', zh: '手工客製蛋糕' },
-        image: '/images/20-bakery.png',
+        image: '/images/20-bakery.webp',
         content: {
             seo: {
                 en: `### Artisan Custom Cakes: When Every Celebration Deserves a Masterpiece
@@ -6483,7 +6483,7 @@ This was one of those.`,
         id: '21-biotech',
         industry: { en: 'Agricultural Biotechnology', zh: '生技農業' },
         subtitle: { en: 'Plant Tissue Culture Services', zh: '植物組織培養技術' },
-        image: '/images/21-biotech.png',
+        image: '/images/21-biotech.webp',
         content: {
             seo: {
                 en: `### Plant Tissue Culture: The Future of Agriculture Grows in a Petri Dish

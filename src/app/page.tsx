@@ -1,11 +1,5 @@
-import Header from "@/components/Header";
-import Gallery from "@/components/Gallery";
+import HomeView from "@/components/HomeView";
 
 export default function Home() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <Gallery />
-    </div>
-  );
+  return <HomeView />;
 }

@@ -1,77 +1,48 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import type { Bi } from '@/data/site';
 
-type Language = 'en' | 'zh';
+type Language = 'zh' | 'en';
 
 interface LanguageContextType {
     language: Language;
     toggleLanguage: () => void;
-    setLanguage: (lang: Language) => void;
-    t: (key: string) => string;
+    l: (text: Bi) => string;
 }
 
-const translations: Record<string, Record<Language, string>> = {
-    // Header
-    'nav.contact': { en: 'CONTACT', zh: '聯繫' },
-    'nav.darkMode': { en: 'Dark Mode', zh: '深色模式' },
-
-    // Gallery
-    'gallery.title': { en: 'Portfolio', zh: '作品集' },
-    'gallery.subtitle': { en: 'Explore creative works across industries', zh: '探索跨產業的創意作品' },
-
-    // Modal Tabs
-    'tab.seo': { en: 'SEO', zh: 'SEO' },
-    'tab.aeo': { en: 'AEO', zh: 'AEO' },
-    'tab.geo': { en: 'GEO', zh: 'GEO' },
-    'tab.aieo': { en: 'AIEO', zh: 'AIEO' },
-
-    // Tab Descriptions
-    'tab.seo.desc': { en: 'Search Engine Optimization', zh: '搜尋引擎優化' },
-    'tab.aeo.desc': { en: 'Answer Engine Optimization', zh: '答案引擎優化' },
-    'tab.geo.desc': { en: 'Geo/Context Optimization', zh: '地理/情境優化' },
-    'tab.aieo.desc': { en: 'AI Engine Optimization', zh: 'AI引擎優化' },
-
-    // Modal
-    'modal.close': { en: 'Close', zh: '關閉' },
-
-    // Footer
-    'footer.copyright': { en: '© 2024 SHUI. All rights reserved.', zh: '© 2024 水一. 版權所有.' },
-
-    // Contact
-    'contact.email': { en: 'Copy Email', zh: '複製信箱' },
-    'contact.copied': { en: 'Copied!', zh: '已複製！' },
-};
-
+const STORAGE_KEY = 'shui-lang';
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-    const [language, setLanguageState] = useState<Language>('en');
+    // 中文為主：預設一律中文，只有使用者主動切換才改英文
+    const [language, setLanguage] = useState<Language>('zh');
 
-    // Detect browser language on mount
     useEffect(() => {
-        const browserLang = navigator.language.toLowerCase();
-        if (browserLang.startsWith('zh')) {
-            setLanguageState('zh');
-        } else {
-            setLanguageState('en');
-        }
+        try {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            // 讀取使用者上次的語言選擇；SSR 一律先輸出中文，掛載後才套用，避免 hydration 不一致
+            // eslint-disable-next-line react-hooks/set-state-in-effect
+            if (saved === 'en') setLanguage('en');
+        } catch { /* storage unavailable */ }
     }, []);
 
+    useEffect(() => {
+        document.documentElement.lang = language === 'zh' ? 'zh-Hant-TW' : 'en';
+    }, [language]);
+
     const toggleLanguage = () => {
-        setLanguageState((prev) => (prev === 'en' ? 'zh' : 'en'));
+        setLanguage((prev) => {
+            const next = prev === 'zh' ? 'en' : 'zh';
+            try { localStorage.setItem(STORAGE_KEY, next); } catch { /* ignore */ }
+            return next;
+        });
     };
 
-    const setLanguage = (lang: Language) => {
-        setLanguageState(lang);
-    };
-
-    const t = (key: string): string => {
-        return translations[key]?.[language] || key;
-    };
+    const l = (text: Bi) => text[language];
 
     return (
-        <LanguageContext.Provider value={{ language, toggleLanguage, setLanguage, t }}>
+        <LanguageContext.Provider value={{ language, toggleLanguage, l }}>
             {children}
         </LanguageContext.Provider>
     );
