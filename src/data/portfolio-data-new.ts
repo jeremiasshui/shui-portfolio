@@ -8,7 +8,7 @@ export const newPortfolioData: PortfolioItem[] = [
         id: '32-crossborder',
         industry: { zh: '跨境電商', en: 'Cross-border E-commerce' },
         subtitle: { zh: '台灣品牌出海指南', en: 'Going-Global Guide for Taiwanese Brands' },
-        image: '',
+        image: '/images/32-crossborder.webp',
         content: {
             seo: {
                 zh: `### 跨境電商入門指南：台灣品牌出海前，先想清楚這 5 件事
@@ -212,7 +212,7 @@ The next morning he printed the order and pinned it to the wall of the roasting 
         id: '33-3c',
         industry: { zh: '3C 科技', en: 'Consumer Tech' },
         subtitle: { zh: '筆電選購攻略', en: 'Laptop Buying Guide' },
-        image: '',
+        image: '/images/33-3c.webp',
         content: {
             seo: {
                 zh: `### 筆電怎麼選？依用途看懂處理器、記憶體、儲存空間與螢幕
@@ -404,7 +404,7 @@ That night they decided in twenty minutes.
         id: '34-baby',
         industry: { zh: '母嬰用品', en: 'Baby & Maternity' },
         subtitle: { zh: '新手爸媽待產清單', en: 'New Parents’ Checklist' },
-        image: '',
+        image: '/images/34-baby.webp',
         content: {
             seo: {
                 zh: `### 待產清單怎麼準備？新手爸媽「現在買、之後買、不用急」完整整理
@@ -590,7 +590,7 @@ That night the cart went from forty-something items to twelve. The rest, they de
         id: '35-wedding',
         industry: { zh: '婚禮顧問', en: 'Wedding Planning' },
         subtitle: { zh: '婚禮籌備時間軸', en: 'Wedding Planning Timeline' },
-        image: '',
+        image: '/images/35-wedding.webp',
         content: {
             seo: {
                 zh: `### 婚禮籌備時間軸：從一年前到婚禮當天，每個階段要做什麼
@@ -778,7 +778,7 @@ The list settled at eighteen tables. Not the smallest, but they knew why every t
         id: '36-interior',
         industry: { zh: '室內設計', en: 'Interior Design' },
         subtitle: { zh: '第一次裝修流程攻略', en: 'First Renovation Guide' },
-        image: '',
+        image: '/images/36-interior.webp',
         content: {
             seo: {
                 zh: `### 第一次裝修怎麼開始？從找設計師到入住的 7 個步驟

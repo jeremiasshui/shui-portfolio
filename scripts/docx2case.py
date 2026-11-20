@@ -78,7 +78,8 @@ for p in sorted(glob.glob(sys.argv[1] + '/*.docx')):
     d = parse(p); d['id'] = ids[n]; d['image'] = ''
     for k in ('seo', 'aeo', 'geo', 'aieo'):
         assert k in d['content'] and 'zh' in d['content'][k] and 'en' in d['content'][k], (p, k)
-    items.append({'id': d['id'], 'industry': d['industry'], 'subtitle': d['subtitle'], 'image': '', 'content': d['content']})
+    img = f"/images/{d['id']}.webp" if os.path.exists(f"public/images/{d['id']}.webp") else ''
+    items.append({'id': d['id'], 'industry': d['industry'], 'subtitle': d['subtitle'], 'image': img, 'content': d['content']})
 ts = "import type { PortfolioItem } from './portfolio-data';\n\n// 由 docs/*.docx 轉出（scripts/docx2case.py），第二批 10 個產業\nexport const extraPortfolioData: PortfolioItem[] = " + json.dumps(items, ensure_ascii=False, indent=2) + ";\n"
 open(sys.argv[2], 'w').write(ts)
 for it in items:
