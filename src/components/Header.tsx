@@ -11,6 +11,7 @@ export default function Header() {
         { href: '/#work', label: { zh: '作品', en: 'Work' } },
         { href: '/work/jb-salad', label: { zh: '實戰案例', en: 'Real Case' } },
         { href: '/about', label: { zh: '經歷', en: 'Experience' } },
+        { href: '/method', label: { zh: 'AEO 方法', en: 'Method' } },
     ];
 
     return (
