@@ -10,7 +10,7 @@ const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const notoSansTC = Noto_Sans_TC({ variable: "--font-noto-sans-tc", subsets: ["latin"], weight: ["400", "500", "700"] });
 
 const title = "水彥捷 Jeremy Shui｜行銷企劃作品集：內容策略 × AI 搜尋優化";
-const description = "36 個產業的 SEO、AEO、GEO 文案模擬提案，每案附 GA4 成效追蹤設計，另有一個真實客戶案例。具 GA4 認證，10 年以上採購、航運、供應鏈與行銷跨領域經驗。";
+const description = "36 個產業的內容策略模擬提案：先回答問題、數據附政府與學術出處、加上作者觀點，並附 GA4 成效追蹤設計；另有一個真實客戶案例。具 GA4 認證，10 年以上採購、航運、供應鏈與行銷經驗。";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),

@@ -17,6 +17,25 @@ const sources = [
   { id: "g-faq", publisher: "Google Search Central Blog", title: "Changes to HowTo and FAQ rich results（2023-08）", url: "https://developers.google.com/search/blog/2023/08/howto-faq-changes", level: "官方" },
   { id: "sej-faq", publisher: "Search Engine Journal", title: "Google Drops FAQ Rich Results From Search（2026）", url: "https://www.searchenginejournal.com/google-drops-faq-rich-results/574429/", level: "產業媒體" },
   { id: "geo", publisher: "Aggarwal et al., KDD 2024（ACM SIGKDD）", title: "GEO: Generative Engine Optimization", url: "https://arxiv.org/abs/2311.09735", level: "同儕審查" },
+  { id: "oai", publisher: "OpenAI", title: "Overview of OpenAI Crawlers", url: "https://developers.openai.com/api/docs/bots", level: "官方" },
+  { id: "ant", publisher: "Anthropic", title: "Does Anthropic crawl data from the web, and how can site owners block the crawler?", url: "https://support.claude.com/en/articles/8896518", level: "官方" },
+  { id: "ppx", publisher: "Perplexity", title: "Perplexity Crawlers", url: "https://docs.perplexity.ai/guides/perplexitybot", level: "官方" },
+  { id: "g-crawl", publisher: "Google Search Central", title: "List of Google's common crawlers（Google-Extended）", url: "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers", level: "官方" },
+  { id: "bing", publisher: "Bing Webmaster Blog", title: "Keeping Content Discoverable with Sitemaps in AI Powered Search", url: "https://blogs.bing.com/webmaster/July-2025/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search", level: "官方" },
+];
+
+const bots: { co: string; bot: string; use: string; ref: string }[] = [
+  { co: "OpenAI", bot: "OAI-SearchBot", use: "ChatGPT 搜尋。封鎖後不會出現在 ChatGPT 搜尋答案中", ref: "oai" },
+  { co: "OpenAI", bot: "GPTBot", use: "模型訓練，可與搜尋分開設定", ref: "oai" },
+  { co: "OpenAI", bot: "ChatGPT-User", use: "使用者在 ChatGPT 中要求讀取網頁時使用，robots.txt 不一定適用", ref: "oai" },
+  { co: "Anthropic", bot: "Claude-SearchBot", use: "Claude 搜尋索引。封鎖後會降低在搜尋結果中的可見度", ref: "ant" },
+  { co: "Anthropic", bot: "ClaudeBot", use: "模型訓練。封鎖後未來內容不會進入訓練資料", ref: "ant" },
+  { co: "Anthropic", bot: "Claude-User", use: "使用者向 Claude 提問時讀取網頁", ref: "ant" },
+  { co: "Perplexity", bot: "PerplexityBot", use: "Perplexity 搜尋索引，官方建議允許以出現在搜尋結果", ref: "ppx" },
+  { co: "Perplexity", bot: "Perplexity-User", use: "使用者觸發的讀取，通常不受 robots.txt 限制", ref: "ppx" },
+  { co: "Google", bot: "Googlebot", use: "Google 搜尋，包含 AI 摘要與 AI 模式", ref: "g-crawl" },
+  { co: "Google", bot: "Google-Extended", use: "Gemini 訓練與 grounding。不影響 Google 搜尋的收錄與排名", ref: "g-crawl" },
+  { co: "Microsoft", bot: "Bingbot", use: "Bing 搜尋與 Copilot。建議提交含正確 lastmod 的 sitemap", ref: "bing" },
 ];
 const n = (id: string) => sources.findIndex((s) => s.id === id) + 1;
 const Ref = ({ id }: { id: string }) => <sup><a href={`#m-${id}`} className="text-teal-700 hover:underline px-0.5">[{n(id)}]</a></sup>;
@@ -86,6 +105,18 @@ export default function MethodPage() {
               <li><strong>舊：</strong>GEO 是「地理／情境優化」。<strong>新：</strong>GEO 是 Generative Engine Optimization，生成式引擎優化<Ref id="geo" />。</li>
               <li><strong>舊：</strong>為了不捏造數字，乾脆不放數字。<strong>新：</strong>只放查得到官方出處的數字，每個都附連結。</li>
             </ul>
+          </section>
+
+          <section className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">讓各家 AI 爬蟲讀得到</h2>
+            <p className="text-[15px] text-gray-700 leading-relaxed mb-4">AI 助理能引用一個網頁，前提是它的爬蟲讀得到。各家都把「搜尋用」和「訓練用」的爬蟲分開，本站的設定是全部允許，並在 sitemap 標示每頁的更新日期。所有頁面都在伺服器端產生完整 HTML，不需要執行 JavaScript 也讀得到內容。</p>
+            <div className="overflow-x-auto rounded-lg border border-gray-200">
+              <table className="w-full text-sm">
+                <thead className="bg-gray-50 text-left"><tr><th scope="col" className="px-3 py-2.5 font-semibold">公司</th><th scope="col" className="px-3 py-2.5 font-semibold">爬蟲</th><th scope="col" className="px-3 py-2.5 font-semibold">用途</th><th scope="col" className="px-3 py-2.5 font-semibold">本站</th></tr></thead>
+                <tbody>{bots.map((b) => <tr key={b.bot} className="border-t border-gray-100"><td className="px-3 py-2.5 text-gray-500 align-top whitespace-nowrap">{b.co}</td><td className="px-3 py-2.5 font-mono text-xs text-gray-900 align-top">{b.bot}</td><td className="px-3 py-2.5 text-gray-700 align-top">{b.use}<Ref id={b.ref} /></td><td className="px-3 py-2.5 text-teal-700 align-top whitespace-nowrap">允許</td></tr>)}</tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-xs text-gray-500">另提供 <a href="/llms.txt" className="underline">/llms.txt</a> 網站導覽。Google 表示 llms.txt 對其搜尋沒有幫助也沒有傷害<Ref id="g-ai" />，其他服務是否採用目前沒有官方證實，屬低成本補充。</p>
           </section>
 
           <section className="mt-12">

@@ -36,7 +36,7 @@ export default function HomeView() {
         },
         {
             q: { zh: '文章寫了不少，AI 搜尋卻從不提到你', en: 'Plenty of articles, yet AI search never mentions you' },
-            a: { zh: '另寫一張 AI 讀得懂的速覽卡：事實、規格、適用對象，一條一條列清楚。', en: 'A separate fact card AI can parse: facts, specs and who it is for, line by line.' },
+            a: { zh: '開頭直接回答問題，並為每個數字附上官方出處。學術研究顯示，加入統計數據與引用來源，能提高內容被 AI 引用的機會。', en: 'Answer the question up front and cite an official source for every number. Research shows that adding statistics and citations raises the chance of being cited by AI.' },
         },
         {
             q: { zh: '行銷做了很多，卻說不出哪一篇帶來詢問', en: 'Lots of marketing, but no idea which piece brought the enquiry' },
@@ -46,7 +46,7 @@ export default function HomeView() {
 
     /* 唐崇達：不要把共同利益當成獨門生意、不要忘記你還有情敵 */
     const compare: { k: Bi; common: Bi; mine: Bi }[] = [
-        { k: { zh: '版本', en: 'Versions' }, common: { zh: '一篇文寫給所有人', en: 'One article for everyone' }, mine: { zh: '同一個產品寫四個版本，各自對應一個場景', en: 'Four versions of one product, each for a specific context' } },
+        { k: { zh: '證據', en: 'Evidence' }, common: { zh: '數字沒有出處，或來自業者自己的說法', en: 'Numbers without sources, or from vendors themselves' }, mine: { zh: '每個數字都附政府、法規或學術來源連結', en: 'Every number linked to a government, legal or academic source' } },
         { k: { zh: '起點', en: 'Starting point' }, common: { zh: '從產品優點開始寫', en: 'Starts from product features' }, mine: { zh: '從讀者的問題和疑慮開始寫', en: 'Starts from the reader’s questions and doubts' } },
         { k: { zh: '交付', en: 'Hand-off' }, common: { zh: '交完文案就結束', en: 'Ends when the copy is delivered' }, mine: { zh: '附 GA4 追蹤設計，知道哪一篇有效', en: 'Includes a GA4 tracking plan to see what works' } },
         { k: { zh: 'B2B 題材', en: 'B2B topics' }, common: { zh: '常寫得像消費品廣告', en: 'Often reads like a consumer ad' }, mine: { zh: '有採購與供應鏈背景，從買方的角度寫', en: 'Written from the buyer’s side, backed by procurement and supply-chain experience' } },
@@ -62,8 +62,8 @@ export default function HomeView() {
                 </h1>
                 <p className="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl">
                     {l({
-                        zh: `我是水彥捷 Jeremy。我把一個產品寫成四個版本：讓 Google 排得上、讓精選摘要答得出、讓社群讀得下去、讓 AI 願意引用。這裡有 ${total} 個產業的模擬提案，和 1 個真實案例。`,
-                        en: `I’m Jeremy Shui. I write each product four ways: to rank on Google, to win featured answers, to read well on social, and to be cited by AI. Here are ${total} spec projects across industries, plus one real client case.`,
+                        zh: `我是水彥捷 Jeremy。我寫的每一頁，都先回答讀者的問題，每個數字附上官方出處，再加上我自己的判斷，讓 Google 和 AI 助理都願意引用。這裡有 ${total} 個產業的模擬提案，和 1 個真實案例。`,
+                        en: `I’m Jeremy Shui. Every page I write answers the reader’s question first, backs each number with an official source, and adds my own judgment, so both Google and AI assistants can cite it. Here are ${total} spec projects across industries, plus one real client case.`,
                     })}
                 </p>
                 <ul className="mt-6 flex flex-wrap gap-2 text-xs sm:text-sm">
@@ -76,6 +76,9 @@ export default function HomeView() {
                         <li key={t.zh} className="rounded-full border border-gray-200 px-3 py-1 text-gray-700">{l(t)}</li>
                     ))}
                 </ul>
+                <Link href="/method" className="mt-4 inline-block text-sm text-teal-800 underline underline-offset-4">
+                    {l({ zh: '我的寫作標準與研究依據 →', en: 'My writing standard and the research behind it →' })}
+                </Link>
                 <div className="mt-8 flex flex-wrap gap-3">
                     <a href="#featured" className="rounded-full bg-gray-900 text-white px-5 py-2.5 text-sm hover:bg-teal-800 transition-colors">
                         {l({ zh: '先看一個案例 →', en: 'See one case first →' })}
@@ -130,7 +133,7 @@ export default function HomeView() {
             <Section id="featured" className="py-16 bg-gray-50">
                 <Eyebrow>{l({ zh: '從這裡開始', en: 'Start here' })}</Eyebrow>
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{l({ zh: '不知道從哪一篇看起？依你的產業挑一篇', en: 'Not sure where to start? Pick by your industry' })}</h2>
-                <p className="text-gray-600 mb-8">{l({ zh: '每篇都包含：讀者困擾、切角、四個版本，和 GA4 追蹤設計。', en: 'Each includes the reader’s problem, the angle, four versions and a GA4 plan.' })}</p>
+                <p className="text-gray-600 mb-8">{l({ zh: '每篇都包含：答案摘要、官方數據、我的觀點、常見問題，和 GA4 追蹤設計。', en: 'Each includes a short answer, official data, my point of view, FAQs and a GA4 plan.' })}</p>
                 <div className="grid gap-5 sm:grid-cols-3">
                     {featured.map((f) => {
                         const item = allCases.find((p) => p.id === f.id)!;
@@ -164,7 +167,7 @@ export default function HomeView() {
             {/* 全部作品 + 分類篩選 */}
             <Section id="work" className="py-16 bg-gray-50">
                 <Eyebrow>{l({ zh: '全部作品', en: 'All work' })}</Eyebrow>
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">{l({ zh: `${total} 個產業，各寫四個版本`, en: `${total} industries, four versions each` })}</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">{l({ zh: `${total} 個產業，每個數字都附出處`, en: `${total} industries, every number sourced` })}</h2>
                 <div className="flex flex-wrap gap-2 mb-8" role="group" aria-label={l({ zh: '依產業篩選', en: 'Filter by industry' })}>
                     {[{ id: 'all' as const, label: { zh: '全部', en: 'All' } }, ...categories].map((c) => (
                         <button
