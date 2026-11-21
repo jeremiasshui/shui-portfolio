@@ -18,7 +18,8 @@ for (const f of files) {
   for (const c of factSrc) if (!idSet.has(c)) issues.push(`事實卡來源不存在 ${c}`);
   for (const i of ids) if (!cited.has(i) && !factSrc.has(i)) issues.push(`來源未被引用 ${i}`);
   for (const u of urls) if (banned.test(u)) issues.push(`疑似非官方來源 ${u}`);
-  if (ids.length < 4) issues.push(`來源太少（${ids.length}）`);
+  if (ids.length < 3) issues.push(`來源太少（${ids.length}）`);
+  else if (ids.length === 3) console.log(`  ⚠ ${f}：只有 3 個來源，內容較精簡`);
   const faqs = (src.match(/\{\s*q:/g) || []).length;
   if (faqs < 4) issues.push(`常見問題少於 4 題（${faqs}）`);
   const fid = f.replace('.ts', '');

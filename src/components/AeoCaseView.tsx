@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import type { PortfolioItem } from '@/data/portfolio-data';
 import type { AeoCase } from '@/data/aeo/types';
+import { hiddenStories } from '@/data/aeo/story-policy';
 import { allCases } from '@/data/all-cases';
 import { caseMeta, categories } from '@/data/case-meta';
 import { SITE } from '@/data/site';
@@ -11,7 +12,7 @@ import Markdown from './Markdown';
 import CaseCard from './CaseCard';
 import Cover from './Cover';
 
-const typeLabel = { gov: '政府機關', law: '法規', intl: '國際組織', academic: '學術研究' } as const;
+const typeLabel = { gov: '政府機關', law: '法規', intl: '國際組織', academic: '學術研究', vendor: '官方產品文件' } as const;
 
 /** AEO 標準 v1.0 版面：答案摘要 → 正文 → 我的觀點 → 常見問題 → 事實卡 → 來源 */
 export default function AeoCaseView({ item, aeo }: { item: PortfolioItem; aeo: AeoCase }) {
@@ -124,11 +125,11 @@ export default function AeoCaseView({ item, aeo }: { item: PortfolioItem; aeo: A
                             </div>
                         </section>
 
-                        {/* 社群版情境文案 */}
-                        <details className="mt-12 rounded-xl border border-gray-200 px-5 py-4 group">
+                        {/* 社群版情境文案（依 story-policy 審核，部分案例不顯示） */}
+                        {!hiddenStories[item.id] && <details className="mt-12 rounded-xl border border-gray-200 px-5 py-4 group">
                             <summary className="cursor-pointer font-semibold text-gray-900">社群版情境文案<span className="ml-2 text-xs font-normal text-gray-500">虛構情境，非事實陳述</span></summary>
                             <div className="mt-3">{md(l(item.content.geo))}</div>
-                        </details>
+                        </details>}
 
                         {/* GA4 */}
                         <section className="mt-12">

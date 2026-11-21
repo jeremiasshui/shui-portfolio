@@ -6,7 +6,7 @@
  * - 作者、製作方式、更新日期（Google：Who / How / Why）
  * 內文以 [s:來源id] 標示出處，畫面上轉成編號連結。
  */
-export type SourceType = 'gov' | 'law' | 'intl' | 'academic';
+export type SourceType = 'gov' | 'law' | 'intl' | 'academic' | 'vendor';
 
 export type Source = {
     id: string;
